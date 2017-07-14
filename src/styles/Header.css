@@ -1,3 +1,19 @@
 .headerComponent {
-	background-color: red; 
+	background-color: #4a6289;
+  padding: 20px;
+  color: #fffff7;
+}
+
+.headerComponent__container {
+	display: flex;
+	align-items: center;
+}
+
+.headerComponent__container__menuBurger {
+	
+}
+
+.headerComponent__container__title {
+	font-size: 36px;
+	padding: 0px 20px 0px 20px;
 }
