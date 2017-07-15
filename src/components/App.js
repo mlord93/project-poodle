@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../styles/App.css';
 
-import Header from './components/Header';
-import About from './components/About';
-import Available from './components/Available';
+import About from './About';
+import Available from './Available';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
         <About />
         <Available />
       </div>
