@@ -1,12 +1,13 @@
 .headerComponent {
 	background-color: #4a6289;
-  padding: 20px;
-  color: #fffff7;
+	padding: 20px;
+	color: #fffff7;
 }
 
 .headerComponent__container {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .headerComponent__container__menuBurger {

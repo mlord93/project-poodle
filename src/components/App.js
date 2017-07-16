@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 
 import About from './About';
-import Available from './Available';
+import Dogs from './Dogs';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <About />
-        <Available />
+        <Dogs />
       </div>
     );
   }

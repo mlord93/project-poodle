@@ -1,0 +1,6 @@
+.aboutComponent {
+	background: rgb(237, 241, 247);
+	overflow: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
