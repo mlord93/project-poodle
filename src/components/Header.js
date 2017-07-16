@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import { Row, Col, DropdownButton, MenuItem } from 'react-bootstrap';
 
 import '../styles/Header.css';
@@ -6,9 +8,9 @@ import '../styles/Header.css';
 class Header extends Component {
   render() {
   	const dropdownBurger = (
-  		<DropdownButton bsSize="large" pullRight bsStyle="default" title="&#9776;" noCaret id="menu-dropdown-burger">
-	      <MenuItem eventKey="1">About Us</MenuItem>
-	      <MenuItem eventKey="2">Poodlers</MenuItem>
+  		<DropdownButton bsSize="large" bsStyle="default" title="&#9776;" noCaret id="menu-dropdown-burger">
+	      <MenuItem eventKey="1"><Link to="/">Home</Link></MenuItem>
+	      <MenuItem eventKey="2"><Link to="/poodles">Poodles</Link></MenuItem>
 	    </DropdownButton>
   	);
 
