@@ -3,7 +3,7 @@ import './App.css';
 
 import Header from './components/Header';
 import About from './components/About';
-import Available from './components/Available';
+import Dogs from './components/Dogs';
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <About />
-        <Available />
+        <Dogs />
       </div>
     );
   }
