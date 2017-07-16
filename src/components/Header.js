@@ -8,7 +8,7 @@ import '../styles/Header.css';
 class Header extends Component {
   render() {
   	const dropdownBurger = (
-  		<DropdownButton bsSize="large" bsStyle="default" title="&#9776;" noCaret id="menu-dropdown-burger">
+  		<DropdownButton pullRight bsSize="large" bsStyle="default" title="&#9776;" noCaret id="menu-dropdown-burger">
 	      <MenuItem eventKey="1"><Link to="/">Home</Link></MenuItem>
 	      <MenuItem eventKey="2"><Link to="/poodles">Poodles</Link></MenuItem>
 	    </DropdownButton>
