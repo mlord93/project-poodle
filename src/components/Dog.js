@@ -3,8 +3,7 @@ import { PropTypes } from 'prop-types';
 import { Media, Well, Col} from 'react-bootstrap';
 import '../styles/Dog.css';
 
-function Dog(props) {
-  const { name, images = [], age, location, notes } = props.dog;
+function Dog( { name, images = [], age, location, notes } ) {
   const { Left, Body, Heading } = Media;
 
   const infoElement = (name, value) => {
@@ -18,7 +17,7 @@ function Dog(props) {
       <Media>
         <Left align="middle">
           <Col md={2}>
-            <img width={200} href="#" src={`${process.env.PUBLIC_URL}${images[0]}`}  />
+            <img alt={name} width={200} href="#" src={`${process.env.PUBLIC_URL}${images[0]}`}  />
           </Col>
         </Left>
         <Body>

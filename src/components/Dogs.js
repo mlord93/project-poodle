@@ -32,7 +32,14 @@ class Dogs extends Component {
     const { dogs } = this.state;
     return (
       dogs.map((dog) =>
-        <Dog dog={dog} key={dog.id} />
+        <Dog
+          name={dog.name}
+          images = {dog.images}
+          age = {dog.age}
+          location = {dog.location}
+          notes = {dog.notes}
+          key={dog.id}
+        />
       )
     );
   }
