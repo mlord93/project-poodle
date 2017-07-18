@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 import {
   BrowserRouter as Router,
-  Route,
-  Switch
+  Switch,
+  Route
 } from 'react-router-dom';
 
 import './index.css';
@@ -11,22 +11,46 @@ import './index.css';
 import App from './components/App';
 import Header from './components/Header';
 import NotFound from './components/NotFound';
+import Sidebar from './components/Sidebar';
 
 import registerServiceWorker from './registerServiceWorker';
 
-const Root = () => {
-	return (
-		<Router>
-      <div>
-      	<Header />
-	      <Switch>
-	        <Route path="/" exact component={App}/>
-	        <Route component={NotFound}/>
-	      </Switch>
-	    </div>
-    </Router>
-	);
-};
+class Root extends Component {
+	constructor() {
+		super();
+
+		this.state = {
+			showSidebar: false
+		};
+
+		this._updateSidebar = this._updateSidebar.bind(this);
+	}
+
+	_updateSidebar(showSidebar) {
+		this.setState({ showSidebar });
+	}
+
+	render() {
+		const { showSidebar } = this.state;
+		const rightContainerClassName = showSidebar ? "rightContainer--show" : "rightContainer";
+		return (
+			<Router>
+	      <div className="rootContainer">
+	      	<div className="leftContainer" onMouseEnter={() => {this._updateSidebar(false)}}>
+			      <Header updateSidebar={this._updateSidebar} />
+			      <Switch>
+			        <Route path="/" exact component={App}/>
+			        <Route component={NotFound}/>
+			      </Switch>
+			    </div>
+		    	<div className={rightContainerClassName}>
+		  			<Sidebar />
+			  	</div>
+		    </div>
+	    </Router>
+		);
+	}
+}
 
 render(<Root />, document.getElementById('root'));
 registerServiceWorker();

@@ -11,7 +11,13 @@
 }
 
 .headerComponent__container__menuBurger {
-	
+	font-size: 36px;
+	padding: 10px;
+}
+
+.headerComponent__container__menuBurger:hover {
+	font-size: 37px;
+	cursor: pointer;
 }
 
 .headerComponent__container__title {

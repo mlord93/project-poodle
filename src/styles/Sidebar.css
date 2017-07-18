@@ -1,0 +1,20 @@
+.sidebarContainer {
+	list-style: none;
+}
+
+.sidebarContainer__link {
+	color: #4a6289 !important;
+}
+
+.sidebarContainer__link__text {
+	font-size: 24px;
+}
+
+.sidebarContainer a {
+	color: #4a6289;
+	text-decoration:none;
+}
+.sidebarContainer a:hover {
+	color: #4a6289;
+	text-decoration:none;
+}
