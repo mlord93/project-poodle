@@ -10,8 +10,9 @@ import './index.css';
 
 import App from './components/App';
 import Header from './components/Header';
-import NotFound from './components/NotFound';
 import Sidebar from './components/Sidebar';
+import Dogs from './components/Dogs';
+import NotFound from './components/NotFound';
 
 import registerServiceWorker from './registerServiceWorker';
 
@@ -39,7 +40,8 @@ class Root extends Component {
 	      	<div className="leftContainer" onMouseEnter={() => {this._updateSidebar(false)}}>
 			      <Header updateSidebar={this._updateSidebar} />
 			      <Switch>
-			        <Route path="/" exact component={App}/>
+			        <Route path="/" exact component={App} />
+			        <Route path="/poodles" exact component={Dogs} />
 			        <Route component={NotFound}/>
 			      </Switch>
 			    </div>

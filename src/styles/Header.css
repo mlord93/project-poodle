@@ -1,7 +1,7 @@
 .headerComponent {
 	background-color: #4a6289;
 	padding: 20px;
-	color: #fffff7;
+	color: #EDF1F7;
 }
 
 .headerComponent__container {
@@ -23,4 +23,13 @@
 .headerComponent__container__title {
 	font-size: 36px;
 	padding: 0px 20px 0px 20px;
+}
+
+.headerComponent__container__title a {
+	color: #EDF1F7;
+	text-decoration: none;
+}
+
+.headerComponent__container__title a:hover {
+	text-decoration: none;
 }
