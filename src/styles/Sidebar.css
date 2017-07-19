@@ -1,0 +1,28 @@
+.sidebarContainer {
+	list-style: none;
+}
+
+.sidebarContainer__link {
+	display: inline-block;
+	color: #4a6289;
+	padding: 0 5px 0 5px;
+	border-radius: 5px;
+}
+
+.sidebarContainer__link:hover {
+	background-color: #4a6289;
+}
+
+.sidebarContainer__link__text {
+	font-size: 24px;
+}
+
+.sidebarContainer a {
+	color: #4a6289;
+	text-decoration:none;
+}
+
+.sidebarContainer a:hover {
+	color: #EDF1F7;
+	text-decoration:none;
+}

@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.rootContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+.leftContainer { 
+	width: 100%;
+}
+
+.rightContainer {
+	display: none;
+}
+
+.rightContainer--show {
+	display: inline-block !important;
+	padding: 20px;
+}
